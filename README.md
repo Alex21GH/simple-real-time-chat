@@ -1,9 +1,9 @@
-# simple-react-full-stack
+# simple-real-time-chat
 
 
 This is a boilerplate to build a real time chat full stack web application using React, Node.js and Express. 
 
-- [simple-react-full-stack](#simple-react-full-stack)
+- [simple-real-time-chat](#simple-real-time-chat)
   - [Introduction](#introduction)
     - [Development mode](#development-mode)
     - [Production mode](#production-mode)
