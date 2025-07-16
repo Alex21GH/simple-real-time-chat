@@ -1,0 +1,115 @@
+/* Colores pastel grisáceos */
+:root {
+  --bg: #f2f2f2;
+  --surface: #ffffff;
+  --border: #e0e0e0;
+  --text: #333333;
+  --accent: #aaaaaa;
+}
+
+* {
+  box-sizing: border-box;
+}
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Login */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.login-container .logo {
+  width: 100px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 16px;
+}
+.login-container h1 {
+  margin-bottom: 16px;
+}
+.login-container input {
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  width: 200px;
+  margin-bottom: 12px;
+}
+.login-container button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background: var(--accent);
+  color: var(--surface);
+  cursor: pointer;
+}
+
+/* Chat */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.chat-container header {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  background: var(--surface);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+.chat-container header .logo {
+  width: 40px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  margin-right: 12px;
+}
+.chat-container header h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px;
+}
+.message {
+  margin-bottom: 8px;
+}
+.message .user {
+  font-weight: bold;
+  margin-right: 4px;
+}
+.message .text {
+  word-wrap: break-word;
+}
+
+.input-area {
+  display: flex;
+  padding: 12px;
+  background: var(--surface);
+  box-shadow: 0 -1px 4px rgba(0,0,0,0.08);
+}
+.input-area input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-right: 8px;
+}
+.input-area button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background: var(--accent);
+  color: var(--surface);
+  cursor: pointer;
+}
