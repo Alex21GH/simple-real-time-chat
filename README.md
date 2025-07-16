@@ -1,8 +1,7 @@
 # simple-react-full-stack
 
-[![Build Status](https://travis-ci.org/crsandeep/simple-react-full-stack.svg?branch=master)](https://travis-ci.org/crsandeep/simple-react-full-stack)
 
-This is a boilerplate to build a full stack web application using React, Node.js, Express and Webpack. It is also configured with webpack-dev-server, eslint, prettier and babel.
+This is a boilerplate to build a real time chat full stack web application using React, Node.js and Express. 
 
 - [simple-react-full-stack](#simple-react-full-stack)
   - [Introduction](#introduction)
@@ -11,15 +10,8 @@ This is a boilerplate to build a full stack web application using React, Node.js
   - [Quick Start](#quick-start)
   - [Documentation](#documentation)
     - [Folder Structure](#folder-structure)
-    - [Babel](#babel)
-    - [ESLint](#eslint)
-    - [Webpack](#webpack)
-    - [Webpack dev server](#webpack-dev-server)
-    - [Nodemon](#nodemon)
-    - [Express](#express)
-    - [Concurrently](#concurrently)
-    - [VSCode + ESLint + Prettier](#vscode--eslint--prettier)
-      - [Installation guide](#installation-guide)
+    - [Client]
+    - [Server]
 
 ## Introduction
 
@@ -63,12 +55,16 @@ yarn start (or npm start)
 All the source code will be inside **src** directory. Inside src, there is client and server directory. All the frontend code (react, css, js and any other assets) will be in client directory. Backend Node.js/Express code will be in the server directory.
 
 ## Client
+```bash
 cd src/client
 npm install socket.io-client
 npm run build
+```
 
 ## Server
+```bash
 cd src/server
 npm install express socket.io
 node index.js
+```
 
